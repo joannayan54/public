@@ -150,14 +150,14 @@ class metamon(object):
             else:
                 print(res["code"])
 
-    def updateAll(self):
-        for i in range(2):
-            self.getWalletPropertyList()
-            for monster in self.metamon_list:
-                if monster["exp"] >= monster["expMax"]:
-                    self.updateMonster(monster)
-                else:
-                    pass
+#     def updateAll(self):
+#         for i in range(2):
+#             self.getWalletPropertyList()
+#             for monster in self.metamon_list:
+#                 if monster["exp"] >= monster["expMax"]:
+#                     self.updateMonster(monster)
+#                 else:
+#                     pass
 
     def expUpMonster(self, lvrange=[1,60], pnumber=2):
         for monster in self.metamon_list:
